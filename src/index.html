@@ -236,6 +236,16 @@
           </div>
         
           <button type="submit">Send Message</button>
+          <div class="messages">
+            <h2>Contact Messages</h2>
+            <div *ngFor="let message of messages" class="message-card">
+              <p><strong>Name:</strong> {{ message.fullName }}</p>
+              <p><strong>Email:</strong> {{ message.emailAddress }}</p>
+              <p><strong>Subject:</strong> {{ message.emailSubject }}</p>
+              <p><strong>Message:</strong> {{ message.message }}</p>
+            </div>
+          </div>
+          
         </form>
         
     </section>

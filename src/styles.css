@@ -609,4 +609,20 @@ form {
       font-size: 14px;
     }
   }
+  .messages {
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  .message-card {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .message-card p {
+    margin: 5px 0;
+  }
+  
   
