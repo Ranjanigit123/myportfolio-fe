@@ -13,6 +13,7 @@ export class ContactComponent {
   constructor(private contactService: ContactService) { }
 
   onSubmit(contactForm: any): void {
+    this.submissionStatus = '';
     if (contactForm.valid) {
       this.isSubmitting = true;  // Show loading indicator
       const contactData = contactForm.value;
